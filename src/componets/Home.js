@@ -32,16 +32,16 @@ const Home = () => {
       <Navbar />
       <Grid container spacing={2}>
         <Grid xs={12} className='background1'>
-          <Grid xs={6} sx={{ margin: '220px 100px' }}>
+          <Grid  xs={12} sm={7} sx={{ margin: { xs:'20px 40px',sm: '100px', md: '220px 100px' } }}>
             <Stack direction="column" justifyContent="center" alignItems="flex-start" spacing={2}>
-              <Item sx={{ color: '#ffff', fontSize: '48px', textShadow: '0px 5px 6px  rgba(0, 0, 0, 0.473)', lineHeight: '65px' }} className='font-Aclonica'>
-                WELCOME TO COOKBLOG! FIND OUR BEST RECIPES
+              <Item sx={{ color: '#ffff', fontSize: { xs:'18px',sm: '30px', md: '48px' }, textShadow: '0px 5px 6px  rgba(0, 0, 0, 0.473)', lineHeight: {xs:'20px',sm:'65px'} }} className='font-Aclonica'>
+                WELCOME TO COOK BLOG! FIND OUR BEST RECIPES
               </Item>
-              <Item sx={{ color: '#ffff', fontSize: '16px' }} className='font-Poppins'>
+              <Item sx={{ color: '#ffff', fontSize: { md: '16px', sm: '12px',xs:'10px' } }} className='font-Poppins'>
                 Get inspired by various recipes from my expert experiences. <br />
                 From quick healthy meals to family suppers.
               </Item>
-              <Item sx={{ color: '#ffff' }} className='Subscribe-btn'>
+              <Item sx={{ color: '#ffff' ,fontSize:"10px",backgroundColor:'#F15A29', borderRadius:'0px',margin:'10px'}}>
                 Subscribe now
               </Item>
             </Stack>
@@ -49,9 +49,9 @@ const Home = () => {
         </Grid>
       </Grid>
       <Grid container spacing={2}>
-        <Grid xs={12} sx={{ marginTop: '100px' }}>
+        <Grid item xs={12} sx={{ marginTop: { xs: '50px', md: '100px' } }}>
           <Stack direction="column" justifyContent="center" alignItems="center" spacing={2}>
-            <Item sx={{ color: 'black', fontSize: '48px' }} className='font-Abhaya'>
+            <Item sx={{ color: 'black', fontSize: { xs:"12px",sm: '36px', md: '48px' } }} className='font-Abhaya'>
               HOTTEST RECIPES AT FOOD & TASTE
             </Item>
             <Item sx={{ padding: '50px 0px 40px', display: 'flex' }}>
@@ -62,7 +62,7 @@ const Home = () => {
           </Stack>
         </Grid>
       </Grid>
-      <Grid container spacing={2}>
+      {/* <Grid container spacing={2}>
         <Grid xs={12}>
           <Stack direction="column" justifyContent="center" alignItems="center" spacing={2}>
             <Item>
@@ -87,21 +87,21 @@ const Home = () => {
             </Item>
           </Stack>
         </Grid>
-      </Grid>
+      </Grid> */}
 
-      <Grid container spacing={2}>
-        <Grid xs={12} container alignItems='cemter' sx={{ margin: '100px 0px', padding: '100px 86px' }} justifyContent="flex-start" className='join_part'>
-          <Grid xs={5} sx={{ backgroundColor: 'white', margin: '70px 0px', padding: '60px 10px', border: "1px solid black", outline: '10px solid white' }} container direction="column" justifyContent="center" alignItems="center">
-            <Item sx={{ fontSize: '32px', padding: '0px 120px', textAlign: 'center' }}>WE LOVE OUR CHEFS JOIN US NOW</Item>
-            <Item><img src={Line_G} alt="" /></Item>
-            <Item sx={{ padding: '30px 0px' }}><img src={Cap} alt="" /></Item>
-            <Item sx={{ fontSize: '16px', padding: '0px 115px', textAlign: 'center' }}>Nam ornare arcu turpis, nec congues with us Curabitur quis euismod mauris. Nulls <br /> eget semper vulputate</Item>
-            <Item sx={{ fontSize: '18px', color: 'black', outline: '1px solid black', padding: '5px 8px', marginTop: '30px', borderRadius: '1px', textAlign: 'center', fontWeight: '600' }}>Our Chefs</Item>
+      {/* <Grid container spacing={2}>
+        <Grid item xs={12} container alignItems='center' justifyContent="center" sx={{ margin: '100px 0px', padding: '50px 20px', textAlign: 'center' }} className='join_part'>
+          <Grid item xs={12} sm={8} md={6} sx={{ backgroundColor: 'white', margin: '70px 0px', padding: '60px 10px', border: "1px solid black", outline: '10px solid white' }}>
+            <Item sx={{ fontSize: { xs: '24px', md: '32px' }, mb: 3 }}>WE LOVE OUR CHEFS JOIN US NOW</Item>
+            <img src={Line_G} alt="" />
+            <img src={Cap} alt="" />
+            <Item sx={{ fontSize: { xs: '14px', md: '16px' }, mt: 3 }}>Nam ornare arcu turpis, nec congues with us Curabitur quis euismod mauris. Nulls <br /> eget semper vulputate</Item>
+            <Item sx={{ fontSize: { xs: '16px', md: '18px' }, color: 'black', outline: '1px solid black', p: '5px 8px', mt: 3, borderRadius: '1px', fontWeight: '600' }}>Our Chefs</Item>
           </Grid>
         </Grid>
-      </Grid>
+      </Grid> */}
 
-      <Box>
+      {/* <Box>
         <Grid container spacing={2} sx={{ padding: '0px 84px' }}>
           <Grid xs={6} sx={{ paddingRight: '200px', padding: '60px 0px' }}>
             <Item sx={{ fontSize: '48px', color: 'black', fontWeight: '600', padding: '15px 0px' }} className='font-Abhaya'>We Invite You To The Recipe Program</Item>
@@ -140,13 +140,13 @@ const Home = () => {
           </Grid>
           <Grid xs={4}>
             <ButtonGroup variant="contained" aria-label="Basic button group">
-              <Button sx={{backgroundColor:'transparent',color:'black',padding:'8px 30px',margin:'10px'}}>One</Button>
-              <Button sx={{backgroundColor:'transparent',color:'black',padding:'8px 30px',margin:'10px'}}>Two</Button>
-              <Button sx={{backgroundColor:'transparent',color:'black',padding:'8px 30px',margin:'10px'}}>Three</Button>
+              <Button sx={{ backgroundColor: 'transparent', color: 'black', padding: '8px 30px', margin: '10px' }}>One</Button>
+              <Button sx={{ backgroundColor: 'transparent', color: 'black', padding: '8px 30px', margin: '10px' }}>Two</Button>
+              <Button sx={{ backgroundColor: 'transparent', color: 'black', padding: '8px 30px', margin: '10px' }}>Three</Button>
             </ButtonGroup>
           </Grid>
         </Grid>
-      </Box>
+      </Box> */}
     </div>
   );
 };

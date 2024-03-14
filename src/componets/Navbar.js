@@ -16,7 +16,7 @@ const Item = styled(Paper)(({ theme }) => ({
 const Navbar = () => {
     return (
         <>
-            <Box sx={{ padding: '20px 84px' }}>
+            <Box sx={{ padding: {xs:'20px',sm:'20px 84px'} }}>
                 <Grid container spacing={2}>
                     <Grid item className='d-flex a-center' xs={2}>
                         <Stack direction="row" justifyContent="flex-start" alignItems="center" spacing={2}>
@@ -25,24 +25,37 @@ const Navbar = () => {
                     </Grid>
                     <Grid item xs={8}>
                         <Stack direction="row" justifyContent="center" alignItems="center" spacing={2} sx={{ margin: '0' }}>
-                            <Item className='d-flex header a-center'>
-                                <li>HOME</li>
-                                <li>PAGES</li>
-                                <li>RECIPE DETAIL</li>
-                                <li><img src={Logo} alt="" width='50px' /></li>
-                                <li>OUR CHEF</li>
-                                <li>BLOG</li>
-                                <li>CONTACT</li>
+                            <Item>
+                                <Item sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}>
+                                    <ul className='d-flex header a-center'>
+                                        <li>HOME</li>
+                                        <li>PAGES</li>
+                                        <li>RECIPE DETAIL</li>
+                                    </ul>
+                                </Item>
                             </Item>
+                            <Item>
+                                <li><img src={Logo} alt="" width='50px' /></li>
+                            </Item>
+                            <Item>
+                                <Item sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}>
+                                    <ul className='d-flex header a-center'>
+                                        <li>OUR CHEF</li>
+                                        <li>BLOG</li>
+                                        <li>CONTACT</li>
+                                    </ul>
+                                </Item>
+                            </Item>
+
                         </Stack>
                     </Grid>
                     <Grid item xs={2} sx={{ display: 'flex', alignItems: "center", justifyContent: 'end' }}>
                         <Stack direction="row" justifyContent="flex-end" alignItems="center" spacing={2}>
-                        <PersonIcon/><Item> LOGIN</Item>
+                            <PersonIcon /><Item sx={{display:{xs:"none"}}}> LOGIN</Item>
                         </Stack>
                     </Grid>
                 </Grid>
-            </Box>
+            </Box >
         </>
     )
 }
