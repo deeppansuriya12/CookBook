@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+  text-decoration: none;
+  list-style: none;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.font-Aclonica{
+  font-family: Aclonica;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.font-Poppins{
+  font-family: Poppins;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.font-Abhaya{
+  font-family: Abhaya;
+}
+.font-Inter{
+  font-family: Inter;
+}
+.d-flex{
   display: flex;
-  flex-direction: column;
+}
+.a-center{
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.css-mhc70k-MuiGrid-root>.MuiGrid-item{
+  padding: 0px !important;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header li{
+  padding: 0px 20px;
+}
+.background1{
+  background: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./componets/photos/image\ 1.png);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Subscribe-btn{
+  background-color: #F15A29 !important;
+  padding: 14px 24px !important;
+  border-radius: 16px;
+  margin-top: 28px !important;
+}
+.line{
+  margin-bottom: 5px;
+}
+.join_part{
+  background-image: url(./componets/photos/join_now.png);
+  background-size: cover;
+  height: 100vh;
+}
+.nudal{
+  background-size: cover;
+  width: 100%;
+  background-image: url(./componets/photos/nudals.png);
+}
+.cake{
+  background-image: url(./componets/photos/cake.png);
+  height: 480px;
+  background-repeat: no-repeat;
+  width: 856px;
 }
